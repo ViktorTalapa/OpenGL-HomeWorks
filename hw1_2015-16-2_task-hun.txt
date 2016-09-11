@@ -1,0 +1,9 @@
+A 2D virtuális világ három, legalább 7-ágú forgó és pulzáló csillagot tartalmaz, amelyek színe különbözõ. A legfényesebb csillag az egérklikkek által kijelölt zárt, -0.8-as tenziójú Catmull-Rom spline-t követi (azaz egy kontrollpontban a sebesség az elõzõ és következõ szegmensek átlagsebességeinek a 0.9-de). A Catmull-Rom spline csomóértékei a gomblenyomáskori idõk. A legutolsó és legelsõ kontrollpont között 0.5 sec telik el, majd a csillag periodikusan újra bejárja a görbét. A görbe mindenhol folytonosan deriválható, a legelsõ pontban is (azaz nem törik meg itt sem).
+
+A másik két csillagot a legfényesebb csillag a Newton féle gravitációs erõvel vonzza, azaz mozgatja, miközben sebességgel arányos surlódási erõ fékezi õket. A gravitációs konstanst úgy kell megválasztani, hogy a mozgás élvezhetõ legyen, azaz a csillagok a képernyõn maradjanak.
+
+SPACE lenyomására a virtuális kameránkat a fényes csillaghoz kapcsolhatjuk, egyébként a kamera statikus.
+
+Motivált hallgatóknak: A mozgó csillagok a Doppler effektus szerint változtassák a színüket ("vörös eltolódás"), feltételezve, hogy a megfigyelõ a világkoordinátarendszer origójában ül.
+
+Értékelés: 1/1

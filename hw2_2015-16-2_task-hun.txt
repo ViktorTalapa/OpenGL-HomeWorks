@@ -1,0 +1,13 @@
+A virtuális világ a budapesti (Budapest az északi szélesség 47 fokán van, a keringési sík és a föld forgástengelye 23 fokot zár be) kertjének észak-déli tájolású 50mx10mx3m-es úszómedencéjét tartalmazza.
+
+A kertje füvesített, zöld színû, diffúz sík. Az úszómedence téglatest alakú, a medence halványkék, diffúz-spekuláris anyagú.
+
+A medence optikailag sima felületû vízzel van felöltve (a víz törésmutatója 1.3 a látható tartományban, a kioltási tényezõ elhanyagolható). A víz felszínén, a medence két pontjából egy-egy körhullám indul ki, amelyek amplitúdója külön-külön állandó és nem verõdik vissza a medence oldaláról (feszített víztükör). A hullámok terjedési sebessége 1 m/s, a frekvenciájuk 0.5 Hz, a két hullám szuperponálódik (össze kell adni két szinuszhullámot, ahol a fázisok a rezgések kezdõpontjától mért távolsággal arányosak). A sugár-vízfelület metszéspont számításhoz a "regula falsi" gyökkeresõ eljárás használandó.
+
+A vízben két optikailag sima felületû tárgy úszik, az egyik aranyozott (n/k az r,g,b hullámhosszain: 0.17/3.1, 0.35/2.7, 1.5/1.9), felületének implicit egyenlete nem lineáris (pl. kvadratikus), a másik ezüstözött (n/k az r,g,b hullámhosszain: 0.14/4.1, 0.16/2.3, 0.13/3.1) poligonháló.
+
+Az objektumokat a fehér Nap (sugara 7*10^8 m, a fény 8 perc alatt ér a földre, amelyekbõl kiszámítható az a határszög, amelynél ha kisebb a sugárirány és napirány közötti szög, akkor a nap sugársûrûségét kell használni), valamint a halványkék ég világítja meg. A rücskös felületek szempontjából a Nap irány, az ég pedig ambiens fényforrásnak tekinthetõ. A Napot eltaláló sima felületekrõl induló sugár sugársûrûsége százszorosa az eget eltaláló sugár sugársûrûségének. A Nap és az ég sugársûrûségét úgy kell beállítani, hogy kép pixelekre és hullámhosszakra vett átlagos sugársûrûsége 0.5 W/m^2/st legyen.
+
+Jelenítse meg a színtér június 21.-én (nyári napforduló), 12.00 órakori állapotát CPU-n az onInitialization-ban végrehajtott rekurzív sugárkövetéssel, és az onDisplay-ben jelenítse meg a képet annak egy teljes képernyõs négyszögre textúrázásával és kirajzolásával (példa program a sugárkövetés diák mellett)!
+
+Értékelés: 1/2

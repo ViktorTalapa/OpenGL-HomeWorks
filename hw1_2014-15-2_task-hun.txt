@@ -1,0 +1,7 @@
+Készítsen elõl-felül-oldalnézetes ortografikus 3D Renner spline görbeszerkesztõt, amelyben a pálya menti sebesség közelítõleg 1 m/sec. A 600x600 pixel felbontású alkalmazói ablak négy egyenlõ részre van osztva, amelyekben az elõl, felül és oldalnézetek látható, egy negyed pedig üres. A világ 3m x 3m x 3m-res kocka, amelynek középpontjában vettük fel az origót. A nézetekben a teljes világ vetületei látszanak, az origó értelemszerûen középen van. A transzformációkat „kézzel” kell számítani, az OpenGL mátrixok most még nem alkalmazhatók.
+
+Amíg még nincs görbénk, az egyik nézetbeli egérkattintások kontrolpontokat vesznek fel, úgy, hogy a nézetre merõleges koordináta zérus. A további nézetekbe kattintva az ott legközelebbinek talált kontrollpont áthelyezhetõ, a nézetre merõleges koordináta változatlanul hagyásával. A pillanatnyi állapotot minden nézetben jelezni kell, a kontrolpontokat sárga körökkel, a 3D Renner spline-t pedig a fehéren rajzolt 2D merõleges vetületeivel.
+
+A SPACE lenyomására egy kör indul el a görbe kezdõpontjából és a sebességvektorát farokként maga után húzva, kb. 1 m/sec pályamenti sebességgel végigcsúszik a görbén. 
+
+Értékelés: 1/1

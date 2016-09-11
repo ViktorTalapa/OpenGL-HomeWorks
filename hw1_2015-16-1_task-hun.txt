@@ -1,0 +1,7 @@
+Adott egy 1000m x 1000m-res mezõ, amelyet kezdetben a teljes viewport-ban látunk. Az egér bal gomb lenyomásával pontokat helyezünk el a mezõn. A pontokat piros belsejû, fehér körvonalú 5m sugarú körrel jelenítjük meg. Egyrészt a pontok egy fehér, önmagában zárt Catmull-Rom spline kontrollpontjai, amelyekhez tartozó idõparaméter a lenyomáskori óra állás. Másrészt az elsõ két pont egy egyenest definiál, a harmadik pedig egy fókusz pontot. A egyenes és fókuszpont által kijelölt parabola a síkot két részre osztja. A parabola fókuszpontot tartalmazó részében a hátteret sárgára, a másik részben türkizre színezzük ki. A Catmull-Rom spline és a parabola egyik metszéspontjában (már ha van) zöld színnel érintõ egyenest rajzolunk mind a parabolához, mind pedig a spline-hoz.
+
+A SPACE lenyomásának hatására a kamera ablak 500m x 500m-resre megy össze úgy, hogy a középpontja helyben marad. Ezután (2m/sec,3m/sec) kezdeti sebességgel vándorútra indul. Ha a kameraablak ütközik a mezõ szélével, onnan biliárd golyó módjára verõdik vissza.
+
+Minden, a feladat szövege által nem specifikált részlet szabadon megválasztható. 
+
+Értékelés: 1/1
